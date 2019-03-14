@@ -1,0 +1,32 @@
+command=$SCRIPT_DIR/$BLOCK_NAME/$BLOCK_NAME
+
+[calendar]
+interval=1
+DATEFMT=+%I:%M:%S %p
+color=#00FF00
+
+[calendar]
+interval=60
+DATEFMT=+%a %m/%d/%Y
+
+# [essid]
+# INTERFACE=wlp2s0
+# interval=10
+# [wifi]
+# INTERFACE=wlp2s0
+# interval=10
+[iface]
+interval=10
+
+[battery2]
+markup=pango
+interval=30
+
+[cpu_usage]
+interval=10
+# LABEL=CPU 
+
+[volume-pulseaudio]
+interval=once
+signal=1
+
