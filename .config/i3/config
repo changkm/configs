@@ -190,7 +190,8 @@ bindsym Shift+Print exec shutter --select
 
 # gnome session for ssh-agent keystore and drivers/settings?
 # gnome power manager does not seem to actually do anything
-exec --no-startup-id gnome-session
+# I don't know what this actually does so gonna disable
+# exec --no-startup-id gnome-session
 
 # Networkmanager applet
 exec --no-startup-id nm-applet
@@ -207,3 +208,4 @@ exec_always --no-startup-id autorandr --change
 # Update Wallpaper on startup
 exec_always --no-startup-id ~/wallpaper_script.sh
 
+exec_always --no-startup-id ~/configs/desktop_workspaces.sh
