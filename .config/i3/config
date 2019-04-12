@@ -208,4 +208,5 @@ exec_always --no-startup-id autorandr --change
 # Update Wallpaper on startup
 exec_always --no-startup-id ~/wallpaper_script.sh
 
+# Try to put workspaces on the correct monitors
 exec_always --no-startup-id ~/configs/desktop_workspaces.sh

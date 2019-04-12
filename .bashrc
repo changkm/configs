@@ -174,7 +174,9 @@ add_vpn_route() {
 
 # Useful Shortcuts
 alias untar='tar -zxvf'
-alias activate-venv='source ~/envs/$(basename $(pwd))/bin/activate'
+alias venv-create='virtualenv -p python3 ~/envs/$(basename $(pwd))'
+alias venv-activate='source ~/envs/$(basename $(pwd))/bin/activate'
+
 
 # Some BBS Shortcuts
 alias perf-1090='ssh root@10.66.5.2'
