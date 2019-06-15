@@ -1,32 +1,43 @@
-command=$SCRIPT_DIR/$BLOCK_NAME/$BLOCK_NAME
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hsted at http://vivien.github.io/i3blocks
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
 
-[calendar]
-interval=1
-DATEFMT=+%I:%M:%S %p
-color=#00FF00
+# Global Properties
+# 
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate
 
-[calendar]
-interval=60
-DATEFMT=+%a %m/%d/%Y
-
-# [essid]
-# INTERFACE=wlp2s0
-# interval=10
-# [wifi]
-# INTERFACE=wlp2s0
-# interval=10
-[iface]
-interval=10
-
-[battery2]
+command=/usr/share/i3blocks/$BLOCK_NAME
+separator_block_width=40
 markup=pango
+color=#586e75
+
+[battery]
 interval=30
+label=
 
 [cpu_usage]
-interval=10
-# LABEL=CPU 
+interval=5  
+min_width=100%
+label=
 
-[volume-pulseaudio]
-interval=once
-signal=1
-
+[time]
+command=echo "<span color='#93a1a1'>`date '+%a %m/%d/%Y %I:%M:%S %p'`</span>"
+interval=1

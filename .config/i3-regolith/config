@@ -233,7 +233,7 @@ bar {
   font pango:Source Code Pro Medium 13
   separator_symbol " "
   # TODO: Do this the way I like it	  
-  status_command i3blocks
+  status_command SCRIPT_DIR=~/repos/i3blocks-contrib i3blocks
   tray_output primary
   position top
 
@@ -277,10 +277,24 @@ exec_always --no-startup-id setxkbmap -option caps:escape
 
 
 # TODO:
+# i3:
 # Screenshot Key
 # Mark with A, Swap with A
+# 
 # Correct Programs on Correct Workspace?
+# 
 # Get mouse pad tracking going the correct way (Natural Scrolling on)
+# 
 # Keyboard shortcut for scroll?
 # fn + j/k?
+# 
 # Wallpaper Script n stuff
+# Grub Background https://wiki.archlinux.org/index.php/Grub#Background_image_and_bitmap_fonts
+# 
+# Shell:
+# Learn about TTY? http://www.linusakesson.net/programming/tty/index.php
+# 
+# Set Display Manager
+# Uninstall Other DMs and WMs and DEs
+#
+# Learn about composite Manager: Compiz

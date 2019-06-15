@@ -8,3 +8,4 @@ To clone and setup:
 git clone --no-checkout https://github.com/changkm/configs.gitcd configs
 git config core.worktree "../../"
 git reset --hard origin/master
+
